@@ -1,0 +1,21 @@
+services:
+  server1:
+    image: express-server:1.0.0
+    ports:
+      - "3001:3000"
+    environment:
+      - SERVER=server1
+
+  server2:
+    image: express-server:1.0.0
+    ports:
+      - "3002:3000"
+    environment:
+      - SERVER=server2
+
+  server3:
+    image: express-server:1.0.0
+    ports:
+      - "3003:3000"
+    environment:
+      - SERVER=server3
